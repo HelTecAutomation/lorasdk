@@ -1,0 +1,15 @@
+[Unit]
+Description=packet forwarder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=always
+RestartSec=30
+WorkingDirectory=/home/pi/lora/packet_forwarder/lora_pkt_fwd
+ExecStartPre=/home/pi/lora/packet_forwarder/reset_pkt_fwd.sh start /home/pi/lora/packet_forwarder/lora_pkt_fwd/local_conf.json
+ExecStart=/home/pi/lora/packet_forwarder/lora_pkt_fwd/lora_pkt_fwd
+ExecStopPost=/home/pi/lora/packet_forwarder/reset_pkt_fwd.sh stop
+
+[Install]
+WantedBy=multi-user.target
