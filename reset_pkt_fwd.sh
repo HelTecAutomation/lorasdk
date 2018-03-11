@@ -2,7 +2,7 @@
 
 # This script is intended to be used on IoT Starter Kit platform only, it
 # performs the following actions:
-#       - export/unpexort GPIO2 used to reset the SX1301 chip
+#       - export/unpexort GPIO17 used to reset the SX1301 chip
 #       - optionaly update the Gateway_ID field of given JSON configuration
 #           file, as a EUI-64 address generated from the 48-bits MAC address
 #
