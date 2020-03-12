@@ -6,80 +6,80 @@
         "radio_0": {
             "enable": true,
             "type": "SX1257",
-            "freq": 917200000,
+            "freq": 922300000,
             "rssi_offset": -164.0,
             "tx_enable": true,
-            "tx_freq_min": 902000000,
-            "tx_freq_max": 928000000
+            "tx_freq_min": 920000000,
+            "tx_freq_max": 925000000
         },
         "radio_1": {
             "enable": true,
             "type": "SX1257",
-            "freq": 917900000,
+            "freq": 923000000,
             "rssi_offset": -164.0,
             "tx_enable": false
         },
         "chan_multiSF_0": {
-            /* Lora MAC channel, 125kHz, all SF, 902.3 MHz */
+            /* Lora MAC channel, 125kHz, all SF, 923.2 MHz */
             "enable": true,
-            "radio": 0,
-            "if": -400000
-        },
-        "chan_multiSF_1": {
-            /* Lora MAC channel, 125kHz, all SF, 902.5 MHz */
-            "enable": true,
-            "radio": 0,
-            "if": -200000
-        },
-        "chan_multiSF_2": {
-            /* Lora MAC channel, 125kHz, all SF, 902.7 MHz */
-            "enable": true,
-            "radio": 0,
-            "if": 0
-        },
-        "chan_multiSF_3": {
-            /* Lora MAC channel, 125kHz, all SF, 902.9 MHz */
-            "enable": true,
-            "radio": 0,
+            "radio": 1,
             "if": 200000
         },
-        "chan_multiSF_4": {
-            /* Lora MAC channel, 125kHz, all SF, 903.1 MHz */
+        "chan_multiSF_1": {
+            /* Lora MAC channel, 125kHz, all SF, 923.4 MHz */
             "enable": true,
             "radio": 1,
-            "if": -300000
+            "if": 400000
         },
-        "chan_multiSF_5": {
-            /* Lora MAC channel, 125kHz, all SF, 903.3 MHz */
+        "chan_multiSF_2": {
+            /* Lora MAC channel, 125kHz, all SF, 922.2 MHz */
             "enable": true,
-            "radio": 1,
+            "radio": 0,
             "if": -100000
         },
-        "chan_multiSF_6": {
-            /* Lora MAC channel, 125kHz, all SF, 903.5 MHz */
+        "chan_multiSF_3": {
+            /* Lora MAC channel, 125kHz, all SF, 922.4 MHz */
             "enable": true,
-            "radio": 1,
+            "radio": 0,
             "if": 100000
         },
-        "chan_multiSF_7": {
-            /* Lora MAC channel, 125kHz, all SF, 903.7 MHz */
+        "chan_multiSF_4": {
+            /* Lora MAC channel, 125kHz, all SF, 922.6 MHz */
             "enable": true,
-            "radio": 1,
+            "radio": 0,
             "if": 300000
         },
-        "chan_Lora_std": {
-            /* Lora MAC channel, 500kHz, SF8, 903.0 MHz */
+        "chan_multiSF_5": {
+            /* Lora MAC channel, 125kHz, all SF, 922.8  MHz */
+            "enable": true,
+            "radio": 1,
+            "if": -200000
+        },
+        "chan_multiSF_6": {
+            /* Lora MAC channel, 125kHz, all SF, 923.0 MHz */
+            "enable": true,
+            "radio": 1,
+            "if": 0
+        },
+        "chan_multiSF_7": {
+            /* Lora MAC channel, 125kHz, all SF, 922.0 MHz */
             "enable": true,
             "radio": 0,
-            "if": 300000,
-            "bandwidth": 500000,
-            "spread_factor": 8
+            "if": -300000
+        },
+        "chan_Lora_std": {
+            /* Lora MAC channel, 500kHz, SF7, 922.1 MHz */
+            "enable": true,
+            "radio": 1,
+            "if": -200000,
+            "bandwidth": 250000,
+            "spread_factor": 7
         },
         "chan_FSK": {
-            /* FSK 100kbps channel, 903.0 MHz */
+            /* FSK 100kbps channel, 921.8 MHz */
             "enable": false,
-            "radio": 0,
-            "if": 300000,
+            "radio": 1,
+            "if": -500000,
             "bandwidth": 250000,
             "datarate": 100000
         },
@@ -200,7 +200,7 @@
     "gateway_conf": {
         "gateway_ID": "3537323928004f00",
         /* change with default server address/ports, or overwrite in local_conf.json */
-        "server_address": "router.au.thethings.network",
+        "server_address": "192.168.0.155",
         "serv_port_up": 1700,
         "serv_port_down": 1700,
         /* adjust the following parameters for your network */
