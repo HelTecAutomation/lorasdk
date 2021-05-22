@@ -15,7 +15,7 @@
         "radio_1": {
             "enable": true,
             "type": "SX1257",
-            "freq": 923000000,
+            "freq": 905000000,
             "rssi_offset": -166.0,
             "tx_enable": false
         },
